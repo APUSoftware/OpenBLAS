@@ -1600,6 +1600,7 @@ void DESTRUCTOR gotoblas_quit(void) {
 #endif
 }
 
+#if 0
 #if defined(_MSC_VER) && !defined(__clang__)
 BOOL APIENTRY DllMain(HMODULE hModule, DWORD  ul_reason_for_call, LPVOID lpReserved)
 {
@@ -1623,6 +1624,7 @@ BOOL APIENTRY DllMain(HMODULE hModule, DWORD  ul_reason_for_call, LPVOID lpReser
   }
   return TRUE;
 }
+#endif
 
 /*
   This is to allow static linking.
